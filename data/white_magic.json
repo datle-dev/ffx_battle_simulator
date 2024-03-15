@@ -1,0 +1,20 @@
+{
+    "cure": {
+        "description": "Restores minor HP to a target.",
+        "level": 1, 
+        "formula": "heal",
+        "rank": 3,
+        "mp_cost": 4,
+        "power": 8,
+        "can_crit": "True"
+    },
+    "pray": {
+        "description": "Restores moderate HP to a target.",
+        "level": 1, 
+        "formula": "heal",
+        "rank": 3,
+        "mp_cost": 10,
+        "power": 10,
+        "can_crit": "True"
+    }
+}
