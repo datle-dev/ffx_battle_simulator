@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 @dataclass
 class Creature:
@@ -15,3 +15,5 @@ class Creature:
     accuracy: int
     evasion: int
     luck: int
+    tick: int = field(default=0)
+    counter: int = field(default=0)

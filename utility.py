@@ -2,7 +2,7 @@ import csv
 import random
 
 
-tick_speed = {}
+tick_speed_lookup = {}
 character_initial_counter = {}
 monster_initial_counter = {}
 
@@ -14,12 +14,12 @@ with open('data/tick_speed.csv') as file:
         agi_high = int(row['agi_high'])
         tick_speed = int(row['tick_speed'])
 
-        tick_speed[agility] = tick_speed
+        tick_speed_lookup[agility] = tick_speed
 
         agility += 1
 
         while agility <= agi_high:
-            tick_speed[agility] = tick_speed
+            tick_speed_lookup[agility] = tick_speed
 
             agility += 1
 
@@ -47,7 +47,7 @@ with open('data/initial_counter.csv') as file:
 
 
 def lookup_tick_speed(agility):
-    return tick_speed[agility]
+    return tick_speed_lookup[agility]
 
 
 def lookup_initial_counter(agility, category):
