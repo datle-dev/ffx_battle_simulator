@@ -119,7 +119,7 @@ def get_initial_counter(agility: int, category: str) -> int:
     return initial_counter
 
 
-def get_counter(tick: int, attack_rank: int = 3, haste_status: float = 1.0) -> None:
+def calc_counter(tick: int, attack_rank: int = 3, haste_status: float = 1.0) -> None:
     '''Determines the new counter following an attack to determine future turn order'''
     counter = tick * attack_rank * haste_status
     return counter
