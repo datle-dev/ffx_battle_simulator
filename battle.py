@@ -68,3 +68,26 @@ def vary_damage(damage):
     print(f'dmg varied={damage_varied}')
 
     return damage_varied
+
+
+def calc_accuracy(accuracy: int, evasion: int) -> int:
+    '''Calculates accuracy based on attacker accuracy and defender evasion'''
+    attacker_acnum = accuracy * 0.4 - evasion + 9
+
+    match attacker_acnum:
+        case x if x < 1:
+            accuracy = 25
+        case x if 1 <= x and x < 3:
+            accuracy = 30
+        case x if 3 <= x and x < 5:
+            accuracy = 40
+        case x if 5 <= x and x < 6:
+            accuracy = 50
+        case x if 6 <= x and x < 7:
+            accuracy = 60
+        case x if 7 <= x and x < 8:
+            accuracy = 80
+        case x if x >= 8:
+            accuracy = 100
+
+    return accuracy
