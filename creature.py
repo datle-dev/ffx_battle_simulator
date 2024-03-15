@@ -21,6 +21,18 @@ class Creature:
     counter: int = field(default=0)
     is_ko: bool = False
 
+    def apply_damage(self, damage: int) -> None:
+        self.hp -= damage
+
+    def apply_heal(self, heal: int) -> None:
+        self.hp += heal
+
+    def update_ko_status(self) -> None:
+        if self.hp <= 0:
+            self.hp = 0
+            self.is_ko = True
+        else:
+            self.is_ko = False
 
 def load_creature(name, json_path) -> Creature:
     with open(json_path) as f:
