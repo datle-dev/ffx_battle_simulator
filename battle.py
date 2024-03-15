@@ -1,6 +1,7 @@
 import math
 import random
 
+
 def calc_damage_str_vs_def(strength: int, defense: int, power: int = 16, cheer_attacker: int = 0, cheer_defender: int = 0) -> int:
     '''Calculates damage based on attacker strength and defender defense'''
     power_fac = power / 16
@@ -29,6 +30,7 @@ def calc_damage_str_vs_def(strength: int, defense: int, power: int = 16, cheer_a
     
     return damage_str_vs_def
 
+
 def calc_damage_mag_vs_mdf(magic: int, magic_defense: int, power: int = 12, focus_attacker: int = 0, focus_defender: int = 0):
     '''Calculates damage based on attacker magic and defender magic defense'''
     power_fac = power / 16
@@ -56,6 +58,7 @@ def calc_damage_mag_vs_mdf(magic: int, magic_defense: int, power: int = 12, focu
     print(f'damage mag vs mdf={damage_mag_vs_mdf}')
 
     return damage_mag_vs_mdf
+
 
 def vary_damage(damage):
     '''Randomly varies damage by a factor between 93.75% and 105.86%'''
