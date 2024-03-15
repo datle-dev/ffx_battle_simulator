@@ -1,0 +1,17 @@
+{
+    "dingo": {
+        "name": "Dingo",
+        "category": "monster",
+        "level": 1,
+        "hp": 125,
+        "hp_max": 125,
+        "strength": 10,
+        "defense": 1,
+        "magic": 1,
+        "magic_defense": 120,
+        "agility": 10,
+        "accuracy": 1,
+        "evasion": 5,
+        "luck": 15
+    }
+}

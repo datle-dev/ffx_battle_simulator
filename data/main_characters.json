@@ -1,0 +1,62 @@
+{
+    "tidus": {
+        "name": "Tidus",
+        "category": "character",
+        "level": 1,
+        "hp": 520,
+        "hp_max": 520,
+        "strength": 15,
+        "defense": 5,
+        "magic": 5,
+        "magic_defense": 5,
+        "agility": 10,
+        "accuracy": 10,
+        "evasion": 10,
+        "luck": 18
+    },
+    "wakka": {
+        "name": "Wakka",
+        "category": "character",
+        "level": 1,
+        "hp": 618,
+        "hp_max": 618,
+        "strength": 14,
+        "defense": 10,
+        "magic": 10,
+        "magic_defense": 5,
+        "agility": 7,
+        "accuracy": 25,
+        "evasion": 5,
+        "luck": 19
+    },
+    "auron": {
+        "name": "Auron",
+        "category": "character",
+        "level": 1,
+        "hp": 1080,
+        "hp_max": 1080,
+        "strength": 20,
+        "defense": 15,
+        "magic": 5,
+        "magic_defense": 5,
+        "agility": 5,
+        "accuracy": 3,
+        "evasion": 5,
+        "luck": 17
+    },
+    "lulu": {
+        "name": "Lulu",
+        "category": "character",
+        "level": 1,
+        "hp": 380,
+        "hp_max": 380,
+        "strength": 5,
+        "defense": 8,
+        "magic": 20,
+        "magic_defense": 30,
+        "agility": 20,
+        "accuracy": 3,
+        "evasion": 40,
+        "luck": 17
+    }
+}
