@@ -27,7 +27,7 @@ def calc_damage_str_vs_def(strength: int, defense: int, power: int = 16, cheer_a
     print(f'def mod={defense_mod}')
     print(f'def buff fac={defense_buff_fac}')
     print(f'def fac={defense_fac}')
-    print(f'damage str vs def ={damage_str_vs_def }')
+    print(f'damage str vs def={damage_str_vs_def }')
     
     return damage_str_vs_def
 
@@ -37,7 +37,7 @@ def calc_damage_mag_vs_mdf(magic: int, magic_defense: int, power: int = 12, focu
     power_fac = power / 16
 
     magic_base = math.floor(((magic + focus_attacker)**2 / 6) + power)
-    
+
     mag_defense_eff = max(1, magic_defense)
     mag_defense_mod = 730 - math.floor((mag_defense_eff * 51 - math.floor(mag_defense_eff**2 / 11)) / 10)
     mag_defense_buff_fac = (15 - focus_defender) / 15
@@ -106,7 +106,8 @@ def is_hit(hit_chance: int) -> bool:
         return True
     else:
         return False
-    
+
+
 def get_tick(agility: int) -> int:
     '''Gets tick speed for a given agility'''
     tick = utility.lookup_tick_speed(agility)
