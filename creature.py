@@ -19,6 +19,7 @@ class Creature:
     luck: int
     tick: int = field(default=0)
     counter: int = field(default=0)
+    is_ko: bool = False
 
 
 def load_creature(name, json_path) -> Creature:
