@@ -11,11 +11,11 @@ class CTBQueue:
 
 
     def __post_init__(self) -> None:
-        self.predict_queue()
+        self.get_queue()
         self.get_next_attacker()
 
 
-    def predict_queue(self) -> None:
+    def get_queue(self) -> None:
         queue_members = [{'name': x.name, 'tick': x.tick, 'counter': x.counter, 'creature': x} for x in self.participants]
         predicted_queue = []
 
