@@ -1,6 +1,7 @@
 import math
 import random
 
+import utility
 
 def calc_damage_str_vs_def(strength: int, defense: int, power: int = 16, cheer_attacker: int = 0, cheer_defender: int = 0) -> int:
     '''Calculates damage based on attacker strength and defender defense'''
@@ -105,3 +106,20 @@ def is_hit(hit_chance: int) -> bool:
         return True
     else:
         return False
+    
+def get_tick(agility: int) -> int:
+    '''Gets tick speed for a given agility'''
+    tick = utility.lookup_tick_speed(agility)
+    return tick
+
+
+def get_initial_counter(agility: int, category: str) -> int:
+    '''Gets initial counter for a given agility and creature category'''
+    initial_counter = utility.lookup_initial_counter(agility, category)
+    return initial_counter
+
+
+def get_counter(tick: int, attack_rank: int = 3, haste_status: float = 1.0) -> None:
+    '''Determines the new counter following an attack to determine future turn order'''
+    counter = tick * attack_rank * haste_status
+    return counter
