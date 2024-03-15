@@ -91,3 +91,17 @@ def calc_accuracy(accuracy: int, evasion: int) -> int:
             accuracy = 100
 
     return accuracy
+
+
+def calc_hit_chance(accuracy: int, luck_attacker: int, luck_defender: int) -> int:
+    '''Calculates chance of a successful hit based on attacker accuracy/luck and defender luck'''
+    hit_chance = accuracy + luck_attacker - luck_defender
+    return hit_chance
+
+
+def is_hit(hit_chance: int) -> bool:
+    '''Determines whether attack successfully hits'''
+    if random.randint(0, 100) < hit_chance:
+        return True
+    else:
+        return False
