@@ -16,6 +16,7 @@ class CTBQueue:
 
 
     def get_queue(self) -> None:
+        '''Predicts whose turn is next looking 10 turns ahead'''
         queue_members = [{'name': x.name, 'tick': x.tick, 'counter': x.counter, 'creature': x} for x in self.participants]
         predicted_queue = []
 
@@ -44,6 +45,23 @@ class CTBQueue:
         self.next_attacker = self.predicted_queue[0]
 
 
-    def __str__(self) -> str:
-        for ind, x in enumerate(self.predicted_queue):
-            print(f'{ind}: {x.name}')
+    def advance_queue(self) -> None:
+        '''Modifies the counter of participants based on the current entitiy's action'''
+        counter_decrement = self.next_attacker.counter
+        # print(counter_decrement)
+        for member in self.participants:
+            # print(member.name)
+            member.counter -= counter_decrement
+            # print(member.counter)
+
+        counter_increment = self.next_attacker.tick * 3
+        next_attacker_index = self.participants.index(self.next_attacker)
+        self.participants[next_attacker_index].counter += counter_increment
+
+        self.get_queue()
+        self.get_next_attacker()
+
+
+    def print_queue(self) -> None:
+        for ind, member in enumerate(self.predicted_queue):
+            print(f'{ind}: {member.name}')
