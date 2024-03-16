@@ -15,19 +15,6 @@ def calc_damage_str_vs_def(strength: int, defense: int, power: int = 16, cheer_a
     defense_fac = round(defense_mod / 730 * defense_buff_fac, 3)
 
     damage_str_vs_def = math.floor(strength_base * defense_fac * power_fac)
-
-    print(f'strength={strength}')
-    print(f'defense={defense}')
-    print(f'power={power}')
-    print(f'cheer atk={cheer_attacker}')
-    print(f'cheer def={cheer_defender}')
-    print(f'power fac={power_fac}')
-    print(f'str base={strength_base}')
-    print(f'def eff={defense_eff}')
-    print(f'def mod={defense_mod}')
-    print(f'def buff fac={defense_buff_fac}')
-    print(f'def fac={defense_fac}')
-    print(f'damage str vs def={damage_str_vs_def }')
     
     return damage_str_vs_def
 
@@ -44,19 +31,6 @@ def calc_damage_mag_vs_mdf(magic: int, magic_defense: int, power: int = 12, focu
     mag_defense_fac = round(mag_defense_mod / 730 * mag_defense_buff_fac, 3)
 
     damage_mag_vs_mdf = math.floor(magic_base * mag_defense_fac * power_fac * 4)
-
-    print(f'magic={magic}')
-    print(f'magic_defense={magic_defense}')
-    print(f'power={power}')
-    print(f'focus atk={focus_attacker}')
-    print(f'focus def={focus_defender}')
-    print(f'power fac={power_fac}')
-    print(f'mag base={magic_base}')
-    print(f'mag def eff={mag_defense_eff}')
-    print(f'mag def mod={mag_defense_mod}')
-    print(f'mag def buff fac={mag_defense_buff_fac}')
-    print(f'mag def fac={mag_defense_fac}')
-    print(f'damage mag vs mdf={damage_mag_vs_mdf}')
 
     return damage_mag_vs_mdf
 
