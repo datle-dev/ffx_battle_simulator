@@ -9,6 +9,8 @@ class Creature:
     level: int
     hp: int
     hp_max: int
+    mp: int
+    mp_max: int
     strength: int
     defense: int
     magic: int
