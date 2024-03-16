@@ -46,6 +46,8 @@ def load_creature(name, json_path) -> Creature:
         level=entities[name]['level'],
         hp=entities[name]['hp'],
         hp_max=entities[name]['hp_max'],
+        mp=entities[name]['mp'],
+        mp_max=entities[name]['mp_max'],
         strength=entities[name]['strength'],
         defense=entities[name]['defense'],
         magic=entities[name]['magic'],
