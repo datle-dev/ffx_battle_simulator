@@ -5,6 +5,8 @@
         "level": 1,
         "hp": 125,
         "hp_max": 125,
+        "mp": 10,
+        "mp_max": 10,
         "strength": 10,
         "defense": 1,
         "magic": 1,
