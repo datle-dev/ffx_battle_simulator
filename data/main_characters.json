@@ -1,5 +1,5 @@
 {
-    "tidus": {
+    "Tidus": {
         "name": "Tidus",
         "category": "character",
         "level": 1,
@@ -16,7 +16,7 @@
         "evasion": 10,
         "luck": 18
     },
-    "wakka": {
+    "Wakka": {
         "name": "Wakka",
         "category": "character",
         "level": 1,
@@ -33,7 +33,7 @@
         "evasion": 5,
         "luck": 19
     },
-    "auron": {
+    "Auron": {
         "name": "Auron",
         "category": "character",
         "level": 1,
@@ -50,7 +50,7 @@
         "evasion": 5,
         "luck": 17
     },
-    "lulu": {
+    "Lulu": {
         "name": "Lulu",
         "category": "character",
         "level": 1,

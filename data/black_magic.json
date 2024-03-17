@@ -1,8 +1,8 @@
 {
     "fire": {
         "description": "Minor fire elemental damage.",
-        "level": 1, 
-        "formula": "mag vs def",
+        "level": 1,
+        "formula": "mag_vs_def",
         "rank": 3,
         "mp_cost": 4,
         "element": "fire",
@@ -11,8 +11,8 @@
     },
     "thunder": {
         "description": "Minor lightning elemental damage.",
-        "level": 1, 
-        "formula": "mag vs def",
+        "level": 1,
+        "formula": "mag_vs_def",
         "rank": 3,
         "mp_cost": 4,
         "element": "lightning",
@@ -21,8 +21,8 @@
     },
     "water": {
         "description": "Minor water elemental damage.",
-        "level": 1, 
-        "formula": "mag vs def",
+        "level": 1,
+        "formula": "mag_vs_def",
         "rank": 3,
         "mp_cost": 4,
         "element": "water",
@@ -31,8 +31,8 @@
     },
     "blizzard": {
         "description": "Minor ice elemental damage.",
-        "level": 1, 
-        "formula": "mag vs def",
+        "level": 1,
+        "formula": "mag_vs_def",
         "rank": 3,
         "mp_cost": 4,
         "element": "ice",
