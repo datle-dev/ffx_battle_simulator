@@ -1,6 +1,6 @@
 import csv
 import random
-
+from enums import CreatureType
 
 tick_speed_lookup = {}
 character_initial_counter = {}
@@ -51,11 +51,11 @@ def lookup_tick_speed(agility):
 
 
 def lookup_initial_counter(agility, category):
-    if category == 'character':
+    if category == CreatureType.CHARACTER:
         ic_low = character_initial_counter[agility][0]
         ic_high = character_initial_counter[agility][1]
         return random.randint(ic_low, ic_high)
-    elif category == 'monster':
+    elif category == CreatureType.MONSTER:
         ic_low = monster_initial_counter[agility][0]
         ic_high = monster_initial_counter[agility][1]
         return random.randint(ic_low, ic_high)

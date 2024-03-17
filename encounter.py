@@ -4,6 +4,7 @@ from typing import List
 
 import battle
 from creature import Creature
+from enums import CreatureType
 
 @dataclass
 class Encounter:
@@ -45,7 +46,7 @@ class Encounter:
 
     def get_available_targets(self, attacker: Creature) -> List[Creature]:
         '''Get the available targets'''
-        if attacker.category == 'character':
+        if attacker.category == CreatureType.CHARACTER:
             available_targets = [x for x in self.enemies if not x.is_ko]
         else:
             available_targets = [x for x in self.party if not x.is_ko]

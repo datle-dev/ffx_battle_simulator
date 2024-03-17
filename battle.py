@@ -2,6 +2,7 @@ import math
 import random
 
 import utility
+from enums import CreatureType
 
 def calc_damage_str_vs_def(strength: int, defense: int, power: int = 16, cheer_attacker: int = 0, cheer_defender: int = 0) -> int:
     '''Calculates damage based on attacker strength and defender defense'''
@@ -92,7 +93,7 @@ def get_tick(agility: int) -> int:
     return tick
 
 
-def get_initial_counter(agility: int, category: str) -> int:
+def get_initial_counter(agility: int, category: CreatureType) -> int:
     '''Gets initial counter for a given agility and creature category'''
     initial_counter = utility.lookup_initial_counter(agility, category)
     return initial_counter
