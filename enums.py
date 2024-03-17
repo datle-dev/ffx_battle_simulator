@@ -12,3 +12,26 @@ class CreatureType(StrEnum):
 
 class Monster(StrEnum):
     DINGO = 'Dingo'
+
+class Formula(StrEnum):
+    STR_VS_DEF = 'str_vs_def'
+    STR_IGN_DEF = 'str_ign_def'
+    MAG_VS_MDF = 'mag_vs_mdf'
+    MAG_IGN_MDF = 'mag_ign_mdf'
+
+class Element(StrEnum):
+    FIRE = 'fire'
+    LIGHTNING = 'lightning'
+    WATER = 'water'
+    ICE = 'ice'
+    HOLY = 'holy'
+
+class BlackMagic(StrEnum):
+    FIRE = 'fire'
+    THUNDER = 'thunder'
+    WATER = 'water'
+    BLIZZARD = 'blizzard'
+    FIRA = 'fira'
+    THUNDARA = 'thundara'
+    WATERA = 'watera'
+    BLIZZARA = 'blizzara'
