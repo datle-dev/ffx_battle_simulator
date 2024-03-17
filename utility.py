@@ -1,13 +1,15 @@
 import csv
 import random
+
 from enums import CreatureType
+from constants import PATH_TICK_SPEED, PATH_INITIAL_COUNTER
 
 tick_speed_lookup = {}
 character_initial_counter = {}
 monster_initial_counter = {}
 
 
-with open('data/tick_speed.csv') as file:
+with open(PATH_TICK_SPEED) as file:
     csv_reader = csv.DictReader(file)
     agility = 0
     for row in csv_reader:
@@ -24,7 +26,7 @@ with open('data/tick_speed.csv') as file:
             agility += 1
 
 
-with open('data/initial_counter.csv') as file:
+with open(PATH_INITIAL_COUNTER) as file:
     csv_reader = csv.DictReader(file)
     agility = 1
     for row in csv_reader:

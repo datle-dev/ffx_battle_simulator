@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 import json
 
 from enums import Character, Monster, CreatureType
+from constants import PATH_MAIN_CHARACTERS, PATH_MONSTERS
 
 @dataclass
 class Creature:
@@ -48,8 +49,14 @@ class Creature:
         else:
             self.is_ko = False
 
-def load_creature(name: Character | Monster, json_path: str) -> Creature:
+def load_creature(name: Character | Monster) -> Creature:
     '''Creates Creature object from Character or Monster enum'''
+
+    if isinstance(name, Character):
+        json_path = PATH_MAIN_CHARACTERS
+    elif isinstance(name, Monster):
+        json_path = PATH_MONSTERS
+
     with open(json_path) as f:
         entities = json.load(f)
 
