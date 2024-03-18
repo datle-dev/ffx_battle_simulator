@@ -35,3 +35,19 @@ class BlackMagic(StrEnum):
     THUNDARA = 'thundara'
     WATERA = 'watera'
     BLIZZARA = 'blizzara'
+
+class Command(StrEnum):
+    ATTACK = 'attack'
+    ITEM = 'item'
+    SKILL = 'skill'
+    SPECIAL = 'special'
+    WHT_MAGIC = 'wht_magic'
+    BLK_MAGIC = 'blk_magic'
+
+class Skill(StrEnum):
+    DARK_ATTACK = 'dark_attack'
+    POWER_BREAK = 'power_break'
+
+class Special(StrEnum):
+    CHEER = 'cheer'
+    PRAY = 'pray'
